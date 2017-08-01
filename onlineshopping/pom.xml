@@ -7,12 +7,20 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>onlineshopping Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+
 	<properties>
 		<javaee.version>7.0</javaee.version>
 		<spring.version>4.3.6.RELEASE</spring.version>
 	</properties>
 
 	<dependencies>
+
+		<!-- Linking backend project -->
+		<dependency>
+			<groupId>net.km</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 		<!-- JAVA EE API -->
 		<dependency>
@@ -26,7 +34,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -38,7 +46,7 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-<!-- JSTL -->
+		<!-- JSTL -->
 
 		<dependency>
 			<groupId>jstl</groupId>
@@ -46,7 +54,7 @@
 			<version>1.2</version>
 		</dependency>
 
-		
+
 	</dependencies>
 	<build>
 
